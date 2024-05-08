@@ -1,170 +1,168 @@
 /* Basic styling for layout */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 100vh;
-    background-color: #000000;
-    color: #fff;
-    overflow-x: hidden; /* Hide horizontal scrollbar */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  background-color: #000000;
+  color: #fff;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 header {
-    background-color: #88fb76;
-    color: #ffffff; /* White text color */
-    padding: 20px;
-    text-align: center;
-    width: 100%;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.5); /* Increased shadow opacity */
-    font-family: 'Orbitron', sans-serif; /* Cyberpunk font */
+  background-color: #88fb76;
+  color: #ffffff; /* White text color */
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Increased shadow opacity */
+  font-family: "Orbitron", sans-serif; /* Cyberpunk font */
 }
 nav {
-    transition: 1s;
-    background-color: #fff;
-    color: #333; /* Dark text color */
-    padding: 10px 20px;
-    text-align: center;
-    width: calc(100% - 500px); /* Adjusted width */
-    border-radius: 20px; /* Rounded corners */
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Added more visible shadow */
-    margin: 0 20px; /* Added margin */
-    font-family: "adobe-clean", sans-serif; /* Set font to "adobe-clean" */
+  transition: 1s;
+  background-color: #fff;
+  color: #333; /* Dark text color */
+  padding: 10px 20px;
+  text-align: center;
+  width: calc(100% - 500px); /* Adjusted width */
+  border-radius: 20px; /* Rounded corners */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Added more visible shadow */
+  margin: 0 20px; /* Added margin */
+  font-family: "adobe-clean", sans-serif; /* Set font to "adobe-clean" */
 }
 nav a {
-    color: #333; /* Dark text color */
-    text-decoration: none;
-    margin: 0 10px; /* Adjusted margin */
-    transition: color 0.3s ease;
-    text-transform: uppercase; /* Make text uppercase */
-    position: relative; /* Position relative for divider */
+  color: #333; /* Dark text color */
+  text-decoration: none;
+  margin: 0 10px; /* Adjusted margin */
+  transition: color 0.3s ease;
+  text-transform: uppercase; /* Make text uppercase */
+  position: relative; /* Position relative for divider */
 }
 nav a:not(:last-child):after {
-    content: "|"; /* Add divider */
-    position: absolute;
-    right: -15px; /* Adjusted divider position */
-    color: #333; /* Dark text color */
+  content: "|"; /* Add divider */
+  position: absolute;
+  right: -15px; /* Adjusted divider position */
+  color: #333; /* Dark text color */
 }
 nav a:hover {
-    color: #88fb76; /* Yellow on hover */
+  color: #88fb76; /* Yellow on hover */
 }
 .characters {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    margin-top: -50px; /* Added margin-top */
-    scale: 0.70;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin-top: -50px; /* Added margin-top */
+  scale: 0.7;
 }
 .gallery-container {
-    white-space: nowrap; /* Prevent images from going to a new line */
+  white-space: nowrap; /* Prevent images from going to a new line */
 }
 .gallery {
-    display: inline-block; /* Make each gallery display next to each other */
-    vertical-align: top;
-    margin-bottom: 10px;
-    transition: transform 0.3s ease;
+  display: inline-block; /* Make each gallery display next to each other */
+  vertical-align: top;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
 }
 .gallery img {
-    width: calc(12% - 10px); /* Adjusted image width */
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* Adjusted shadow properties */
-    transition: transform 0.3s ease;
-    position: relative;
-    left: 50%;
-    transform: translateX(-20%);
+  width: calc(12% - 10px); /* Adjusted image width */
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Adjusted shadow properties */
+  transition: transform 0.3s ease;
+  position: relative;
+  left: 50%;
+  transform: translateX(-20%);
 }
 .gallery img:first-child {
-    margin-left: calc(-12% + 10px); /* Adjusted margin for the first image */
+  margin-left: calc(-12% + 10px); /* Adjusted margin for the first image */
 }
 .gallery img:last-child {
-    margin-right: calc(-12% + 10px); /* Adjusted margin for the last image */
+  margin-right: calc(-12% + 10px); /* Adjusted margin for the last image */
 }
 .gallery img:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 .text-container {
-    display: flex;
-    justify-content: center;
-    margin-top: -40px;
-    margin-bottom: 200px;
+  display: flex;
+  justify-content: center;
+  margin-top: -40px;
+  margin-bottom: 200px;
 }
 .text-item {
-    margin: 0 50px; /* Adjust as needed */
-    color: #fff;
-    font-size: x-large;
-    font-family: 'Orbitron', sans-serif;
+  margin: 0 50px; /* Adjust as needed */
+  color: #fff;
+  font-size: x-large;
+  font-family: "Orbitron", sans-serif;
 }
 .arrow {
-    width: 0;
-    height: 0;
-    border-left: 100px solid transparent;
-    border-right: 100px solid transparent;
-    border-top: 100px solid #ffffff; /* Adjust color as needed */
-    margin: 0 auto;
-   
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-top: 100px solid #ffffff; /* Adjust color as needed */
+  margin: 0 auto;
 }
 .quotation-box {
-margin-top: 70px;
-text-align: left;
-margin-bottom: 50px;
-
+  margin-top: 70px;
+  text-align: left;
+  margin-bottom: 50px;
 }
 
 .quotation {
-font-family: 'Sentinel', 'Palatino Linotype', sans-serif;
-font-size: 14px; /* Reduce font size */
-color: #88fb76;
-margin: 0;
-padding: 10px; /* Reduce padding */
-background-color: #000000;
-border-radius: 5px;
-box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-max-width: 300px; /* Limit maximum width */
-margin-left: -500px; /* Add left margin */
-text-align: center;
+  font-family: "Sentinel", "Palatino Linotype", sans-serif;
+  font-size: 14px; /* Reduce font size */
+  color: #88fb76;
+  margin: 0;
+  padding: 10px; /* Reduce padding */
+  background-color: #000000;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  max-width: 300px; /* Limit maximum width */
+  margin-left: -500px; /* Add left margin */
+  text-align: center;
 }
 .title {
-    font-size: 24px;
-    margin-top: 50px;
+  font-size: 24px;
+  margin-top: 50px;
 }
 .subtitle {
-    font-size: 18px;
-    margin-top: 10px;
-    margin-bottom: 50px;
-    color: #666;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  color: #666;
 }
 .image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 .image {
-    margin: 0 10px; /* Adjust as needed */
-    width: 270px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
+  margin: 0 10px; /* Adjust as needed */
+  width: 270px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
 }
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    width: 100%;
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 footer a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 20px;
 }

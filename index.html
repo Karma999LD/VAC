@@ -1,53 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VARIETY ART COLLECTIVE</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <h1>VARIETY ART COLLECTIVE</h1>
-    </header>
-    <nav id="menu">
-        <a href="#">SERVICES</a>
-        <a href="#">SHOP</a>
-        <a href="#">HOME</a>
-        <a href="#">ABOUT</a>
-        <a href="#">CONTACT</a>
-    </nav>
-    <div class="characters">
-        <div class="gallery-container">
-            <a href="#"><img src="assets/img/pic_kya.png" alt="pic_kya"></a>
-            <a href="#"><img src="assets/img/pic_dylan.png" alt="pic_dylan"></a>
-            <a href="#"><img src="assets/img/pic_klaas.png" alt="pic_klaas"></a>
-            <a href="#"><img src="assets/img/pic_kevin.png" alt="pic_kevin"></a>
-            <a href="#"><img src="assets/img/pic_lars.png" alt="pic_lars"></a>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>VARIETY ART COLLECTIVE</title>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>VARIETY ART COLLECTIVE</h1>
+        </header>
+        <nav id="menu" class="fixed">
+            <a href="#">SERVICES</a>
+            <a href="#">SHOP</a>
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">CONTACT</a>
+        </nav>
+        <div class="characters">
+            <div class="gallery-container">
+                <a href="#"><img src="assets/img/pic_kya.png" alt="pic_kya"></a>
+                <a href="#"><img src="assets/img/pic_dylan.png" alt="pic_dylan"></a>
+                <a href="#"><img src="assets/img/pic_klaas.png" alt="pic_klaas"></a>
+                <a href="#"><img src="assets/img/pic_kevin.png" alt="pic_kevin"></a>
+                <a href="#"><img src="assets/img/pic_lars.png" alt="pic_lars"></a>
+            </div>
         </div>
-    </div>
-    <div class="quotation-box">
-        <blockquote class="quotation">
+        <div class="quotation-box">
+            <blockquote class="quotation">
             "We had an idea for an online artist collective! We'd build a website with cool profiles for each of us, themed to our artistic styles. Think alter egos for an extra creative twist! We could showcase our work, offer commissions together, and even collaborate on projects. Basically, it'd be a space to support each other's growth and reach a wider audience. We could even have fun social media profiles for the collective!"
         </blockquote>
-    </div>
-    <footer>
-        <a href="#"><img src="instagram_logo.png" alt="Instagram"></a>
-        <a href="#"><img src="twitter_logo.png" alt="Twitter"></a>
+        </div>
+        <footer>
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
         &copy; 2024 VARIETY ART COLLECTIVE
     </footer>
-    <script>
-        var menu = document.querySelector('#menu');
-        var box = document.querySelector('nav'); // Changed selector to match the nav element
-        var boxPosition = box.getBoundingClientRect().top;
-        window.addEventListener('scroll', function() {
-            if (window.pageYOffset >= boxPosition) {
-                menu.style.top = '0px';
-            } else {
-                menu.style.top = 'calc(100% - 100px)';
-            }
-        });
-    </script>
-</body>
+        <script src="https://kit.fontawesome.com/db5fbe6cb2.js" crossorigin="anonymous"></script>
+        <script src="./script/script.js"></script>
+    </body>
 </html>
